@@ -5,7 +5,13 @@
 
     <meta charset='UTF-8'/>
     <title>Dummy</title>
-
+    <link rel='stylesheet' href='styles.css'/>
+    <style>
+      body {
+        color: #0000FF;      /* Blue */
+      }
+    </style>
+<!-- the above is not the best to have -->
   </head>
 
   <body>
@@ -15,9 +21,19 @@
     <p>This is a dummy page that helps us demonstrate reusable CSS
       stylesheets. <a href='hello-css.html'>Go back</a>.</p>
 
-    <p>Want to try crossing out an <a href='nowhere.html'>obsolete link</a>? This
-      is your chane!</p>
-
+    <p>Want to try crossing out an <a href='nowhere.html'
+      style='color: #990000; text-decoration: line-through;'>obsolete link</a>?
+      This is your chane!</p>
+<!-- avoid inline styles AT ALL COSTS-->
   </body>
 
 </html>
+
+<!-- product pages will have :
+<head>
+  <link rel='stylesheet' href='styles.css'/>
+  <link rel='stylesheet' href='product.css'/>
+</head>
+
+while blog pages will have the same, just with
+<link rel='stylesheet' href='blog.css'/>
